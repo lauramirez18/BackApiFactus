@@ -20,7 +20,6 @@ router.post("/",[
 
 router.get("/",httpcustomer.getCustomer)
 
-router.get("/:id",httpcustomer.getCustomerById)
 
 router.put("/:id",[
     

@@ -16,7 +16,7 @@ const InvoiceSchema = new mongoose.Schema({
   customer: {type: mongoose.Schema.Types.ObjectId, ref: 'Customer', required: true },
   products: [
     {
-        product:{type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true},
+      type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true,
         quantify:{type: Number, required: true},
     },
       ],

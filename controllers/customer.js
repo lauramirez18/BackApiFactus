@@ -34,15 +34,6 @@ const httpcustomer =  {
             console.log(err)
         }
     },
-    getCustomerById: async (req,res)=>{
-        try{
-            const customer = await Customer.findById(req.params.id)
-            res.json(customer)
-        }catch(err){
-            res.status(400).json({ error: 'Error al obtener customer' })
-            console.log(err)
-        }
-    },
     updateCustomer: async (req,res)=>{
         try{
             const customer = await Customer.findByIdAndUpdate(req.params.id,req.body,{new:true})

@@ -5,11 +5,11 @@ import Product from "../models/product.js"
 
 
 const httpinvoice =  {
-    /* postInvoice: async (req, res) => {
-        const authHeader = req.headers.authorization;
-        let token =process.env.TOKEN;
+    /* posprocess.env.TOKEN;
     
-        try {
+        try {tInvoice: async (req, res) => {
+        const authHeader = req.headers.authorization;
+        let token =
 
     
             const { numbering_range_id, reference_code, observation, payment_form, payment_due_date, payment_method_code, billing_period, customer, products } = req.body;

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const InvoiceSchema = new mongoose.Schema({
   numbering_range_id: { type: Number,  },
-  reference_code: { type: String, unique: true },
+  reference_code: { type: String, unique: true, required: true },
   observation: { type: String },
   payment_form: { type: Object,  },
   payment_due_date: { type: Date,  },
